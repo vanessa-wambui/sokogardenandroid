@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".PaymentActivity">
+
+<!--    below is the text view-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete payment with Mpesa"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#04A30A"
+        android:textStyle="bold"/>
+
+<!--    Below is a card view holding our content-->
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="15dp">
+
+
+<!--    linear layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#243">
+
+<!--        below is a textview where the name of the product shall be binded -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtProductName"
+            android:text="Product Name"
+            android:textSize="30sp"
+            android:textColor="#FFF"
+            android:textStyle="bold|italic"/>
+
+<!--         below is the imageview for the image   -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/imgProduct"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp" />
+
+<!--            below is the textview for the product cost-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProductCost"
+                android:text="Kes 1000"
+                android:textSize="30sp"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+<!--        below is an edittext for entering the mobile number        -->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:hint="Enter Phone number e.g 254787..."
+                    android:textColorHint="#000"
+                    android:textSize="23sp"/>
+<!--        below is a button to complete payment-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/path"
+            android:text="Pay Now"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#676"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
